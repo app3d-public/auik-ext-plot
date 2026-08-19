@@ -1,0 +1,8 @@
+.vscode/
+.cache
+build/
+*.exe
+*.dll
+*.a
+__pycache__/
+*.py[cod]
