@@ -1,6 +1,6 @@
 # Auik Plot Extension
 
-`auik-ext-plot` is an extension for the [Auik](https://repos.homedatasrv.ru/app3d/auik) library that provides widgets for displaying and editing 2D curves.  
+`auik-ext-plot` is an extension for the [Auik](https://repos.wusikijeronii.me/app3d/auik) library that provides widgets for displaying and editing 2D curves.  
 It provides an interactive curve editor with canvas navigation, curve and control point editing, selection, and customizable grid visualization.
 
 [<img src="./screenshots/curve_canvas.png" alt="screenshot" width="350"/>](./screenshots/curve_canvas.png)
@@ -37,8 +37,8 @@ Auik is distributed as a CMake project and is intended to be integrated as a sub
 
 ### Bundled submodules
 The following dependencies are included as git submodules and must be checked out when cloning:
-- [acbt](https://repos.homedatasrv.ru/app3d/acbt)
-- [auik](https://repos.homedatasrv.ru/app3d/auik)
+- [acbt](https://repos.wusikijeronii.me/app3d/acbt)
+- [auik](https://repos.wusikijeronii.me/app3d/auik)
 
 ## License
 This project is licensed under the  [MIT License](LICENSE).
