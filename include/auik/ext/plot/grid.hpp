@@ -83,7 +83,7 @@ namespace auik::plot
         u32 get_depth_requirement() const override { return 6u; }
         AUIK_EXT_PLOT_EXPORT void update_depth(const amal::vec2 &depth_range) override;
         AUIK_EXT_PLOT_EXPORT void draw(DrawCtx &ctx) override;
-        u32 signature() const override { return AUIK_TAG_PLOT_GRID; }
+        u32 signature() const noexcept override { return AUIK_TAG_PLOT_GRID; }
 
     private:
         void invalidate_geometry();

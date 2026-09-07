@@ -54,7 +54,7 @@ namespace auik::plot
         u32 get_depth_requirement() const override { return 1u; }
         AUIK_EXT_PLOT_EXPORT void update_depth(const amal::vec2 &depth_range) override;
         AUIK_EXT_PLOT_EXPORT void draw(DrawCtx &ctx) override;
-        u32 signature() const override { return AUIK_TAG_PLOT_CURVE; }
+        u32 signature() const noexcept override { return AUIK_TAG_PLOT_CURVE; }
 
     protected:
         AUIK_EXT_PLOT_EXPORT amal::vec2 curve_to_screen(const amal::vec2 &point) const;
@@ -124,7 +124,7 @@ namespace auik::plot
         AUIK_EXT_PLOT_EXPORT void on_hover(HoverState state) override;
         AUIK_EXT_PLOT_EXPORT void on_click(MouseKey key, KeyPressState state, u32 click_count) override;
         AUIK_EXT_PLOT_EXPORT void on_drag(const amal::vec2 &delta, KeyPressState state) override;
-        u32 signature() const override { return AUIK_TAG_PLOT_CONTROL_CURVE; }
+        u32 signature() const noexcept override { return AUIK_TAG_PLOT_CONTROL_CURVE; }
 
     protected:
         AUIK_EXT_PLOT_EXPORT void rebuild_geometry() override;

@@ -46,7 +46,7 @@ namespace auik::plot
         AUIK_EXT_PLOT_EXPORT void draw(DrawCtx &ctx) override;
         AUIK_EXT_PLOT_EXPORT void on_click(MouseKey key, KeyPressState state, u32 click_count) override;
         AUIK_EXT_PLOT_EXPORT void on_drag(const amal::vec2 &delta, KeyPressState state) override;
-        u32 signature() const override { return AUIK_TAG_PLOT_CURVE_CANVAS; }
+        u32 signature() const noexcept override { return AUIK_TAG_PLOT_CURVE_CANVAS; }
 
     private:
         void commit_rubber_band();
