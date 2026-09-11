@@ -19,7 +19,7 @@ if(NOT COMMAND compile_auik_style_ids)
     include("${CMAKE_CURRENT_SOURCE_DIR}/modules/auik/tools/theme_build.cmake")
 endif()
 
-set(AUIK_EXT_PLOT_BASE_THEME "${CMAKE_CURRENT_SOURCE_DIR}/src/style/theme.css")
+set(AUIK_EXT_PLOT_BASE_THEME "${CMAKE_CURRENT_SOURCE_DIR}/src/style/theme.asd")
 set(AUIK_EXT_PLOT_STYLE_IDS_CSV "${CMAKE_CURRENT_SOURCE_DIR}/src/style/default_style_tags_id.csv")
 set(AUIK_EXT_PLOT_STYLE_IDS_HEADER
     "${CMAKE_CURRENT_BINARY_DIR}/include/auik/ext/plot/widget_tags.hpp")
